@@ -13,4 +13,5 @@ app.on('ready', () => {
   })
   const urlLocation = isDev ? 'http://localhost:3000' : ''
   maiWindow.loadURL(urlLocation)
+  maiWindow.webContents.openDevTools()
 })
